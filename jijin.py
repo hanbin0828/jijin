@@ -120,7 +120,7 @@ if __name__ == '__main__':
     rt = int(round(t * 1000))
     result = []
     code_num = input('请输入基金编码:')
-    for num in range(1, 10):
+    for num in range(1, 50):
         url = "http://api.fund.eastmoney.com/f10/lsjz?callback=jQuery18308192278761728433_1609140983486&fundCode=" + code_num + "&pageIndex=" + str(
             num) + "&pageSize=20&startDate=&endDate&_=" + str(rt)
         data = get_html(url)
